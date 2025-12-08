@@ -1,0 +1,15 @@
+Package: PCFSiM
+Type: Package
+Title: : Modeling and characterization of Spatial Structures with Sigmoid-fitted PCF
+Version: 1.0.0
+Authors@R: 
+    c(
+      person("Pierre", "Bost", email = "pierre.bost@curie.fr", role = c("aut", "cre")),
+      person("Fatoumata", "Mangane", email = "fatoumatamangane1@gmail.com", role = c("aut"))
+    )
+Maintainer: Pierre BOST <pierre.bost@curie.fr>
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+Depends: 
+    R (>= 3.5)
+LazyData: true
