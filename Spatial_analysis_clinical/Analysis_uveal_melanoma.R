@@ -23,7 +23,7 @@ color_convertion=function(x,max_scale=NULL) {
 
 source("Desktop/Projet_analyse_pcf/List_function_pcf_analysis.R")
 
-Raw_metadata = read.delim("UM_annotation.csv",sep=",")
+Raw_metadata = read.delim("Updated_metadata_UM.csv",sep=",")
 
 Cluster_temp = Raw_metadata$Clustering
 Cluster_temp[Cluster_temp%in%c(4)] = "Healthy hepatocytes"

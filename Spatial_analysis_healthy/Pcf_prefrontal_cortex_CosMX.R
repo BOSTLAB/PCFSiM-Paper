@@ -11,7 +11,7 @@ CCC_computation = function(x,y) {
 
 source("Desktop/Projet_analyse_pcf/List_function_pcf_analysis.R")
 
-Raw_metadata = read.delim("Annotation_PF_CoxMX.csv",sep=",")
+Raw_metadata = read.delim("Annotation_PF_CosMX.csv",sep=",")
 
 
 sce = SingleCellExperiment(assays = list(Raw_intensity = matrix(0,nrow = 2,ncol =nrow(Raw_metadata) )), 

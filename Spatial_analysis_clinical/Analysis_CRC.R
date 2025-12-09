@@ -23,10 +23,8 @@ color_convertion=function(x,max_scale=NULL) {
 
 source("Desktop/Projet_analyse_pcf/List_function_pcf_analysis.R")
 
-Raw_metadata = read.delim("Desktop/CRC_pcf_analysis/Annotated_data.txt",sep="\t")
-Mean_expression = read.delim("Desktop/CRC_pcf_analysis/Mean_profile_cluster.txt",row.names = 1)
+Raw_metadata = read.delim("Annotated_CRC_data.txt",sep="\t")
 
-pheatmap(t(Mean_expression[,-1]),clustering_method = 'ward',scale="row",breaks = seq(-3,3,length.out=100))
 
 Cluster_temp = Raw_metadata$Cluster
 Cluster_temp[Cluster_temp%in%c(7,9)] = "Macrophages"
