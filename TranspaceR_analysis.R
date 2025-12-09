@@ -40,7 +40,7 @@ Geary_genes = Geary_computation$Selected_genes
 # All selected genes from selected score methods
 Shared_genes = Select_genes(Selected_objects =list(Variance_genes,Zero_genes,Geary_genes),
                             Selected_names = c('Variance_genes','Zero_genes','Geary_genes'))
-# Normalization by cell size and Clustering
+# Clustering
 Clustering_output = Clusters_maker(Expression_file, Shared_genes, K=50, metric_used="L2", nThreads = 20, resolution = 1)
 Clustering = Clustering_output$Clustering  
 PCA_data = Clustering_output$PCA_data
